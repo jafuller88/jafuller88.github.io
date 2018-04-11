@@ -5,5 +5,9 @@
 layout: home
 title: Home
 icon: fa-home
+cover-photo: assets/images/homepage.png
+cover-photo-alt: "Cover photo: An Awsome Mining Farm!"
+auto-header: none
 order: 1
 ---
+<div></div>
