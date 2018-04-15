@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Setting up a new Typescript project"
+title:  "Starting a new Typescript project"
 date:   2018-03-08 16:16:01 -0600
 categories: Typescript
 ---
@@ -85,7 +85,7 @@ Create a new file in the src/ folder called main.ts
 import SHA256 = require("crypto-js/sha256");
 
 let newHash = calculateHash(0, "9dfd5ade27d09cabf3b5162757bfab3c11ce8f0b840cf9f2f526bed84263027c", "05/03/2018 12:00:00",  
-            { sender: "jaffa", receiver: "cakes", amount: 4 }); 
+            { sender: "address1", receiver: "address2", amount: 4 }); 
 
 console.log("Hello. New Hash = " + newHash);
 
@@ -150,7 +150,7 @@ Now change the code in src/main.ts to import calculateHash from hash.ts:
 import { calculateHash } from "./hash"
 
 let newHash = calculateHash(0, "9dfd5ade27d09cabf3b5162757bfab3c11ce8f0b840cf9f2f526bed84263027c", "05/03/2018 12:00:00",  
-            { sender: "jaffa", receiver: "cakes", amount: 4 }); 
+            { sender: "address1", receiver: "address2", amount: 4 }); 
 
 console.log("Hello. New Hash = " + newHash);
 ```
@@ -196,7 +196,7 @@ Now change main.ts to update the page:
 ```typescript
 function helloHash() {
     let newHash = calculateHash(0, "9dfd5ade27d09cabf3b5162757bfab3c11ce8f0b840cf9f2f526bed84263027c", "05/03/2018 12:00:00",  
-                { sender: "jaffa", receiver: "cakes", amount: 4 }); 
+                { sender: "address1", receiver: "address2", amount: 4 }); 
     
     let myDiv = document.getElementById("hash");
     if (newHash && myDiv) {
