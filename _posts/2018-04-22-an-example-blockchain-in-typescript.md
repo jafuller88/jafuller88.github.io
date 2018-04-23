@@ -10,8 +10,8 @@ This is a basic example of how the blockchain works. It uses a crypto currency (
 1. A Transaction
 2. A Block
 3. How Blocks are chained
-    * Proof of Work
-    * Mining Transactions and Rewards
+4. Proof of Work
+5. Mining Transactions and Rewards
 
 Limitations:
 
@@ -188,7 +188,7 @@ So lets add a new function to our Block class for mining the new block:
 ### Mining Transactions and Rewards
 We have our new Blockchain Class where we are able to add new transactions, a Block Class where we can construct a new Block object for a given array of transactions, and a function to mine the next block with a set difficulty.
 
-To bring this all togther we need one more function inside our Blockchain class:
+To bring this all together we need one more function inside our Blockchain class:
 
 ```typescript
     ////////////////////////////////////////////
@@ -312,7 +312,7 @@ This gives the following output:
     ]
 }
 ```
-We now have a new block with a hash of 0000b7e9da3161fd17267f8bc484bd501950a14ab519e611d73650ae80d4b51d. The previous hash set in the block was included in the data to generate this hash. As you can see the new block has a hash with 4 leading zeros which meets the set difficulty level. From the nonce value you can also see that it took 69,089 attempts to find a hash which meets the difficulty criteria. I advise that you reduce this to 1 for your testing!
+We now have a new block. The previous hash set in the block was included in the data to generate this hash. As you can see the new block has a hash with 4 leading zeros which meets the set difficulty level. From the nonce value you can also see that it took 69,089 attempts to find a hash which meets the difficulty criteria. I advise that you reduce this to 1 for your testing!
 
 Thanks for reading and following this working example. I hope that you have found it useful.
 

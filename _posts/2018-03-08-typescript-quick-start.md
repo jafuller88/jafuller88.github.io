@@ -257,4 +257,4 @@ gulp.task("default", ["copy-html"], function () {
 });
 
 ```
-Thats it were done!
+That's it we're done!
